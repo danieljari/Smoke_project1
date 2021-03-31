@@ -1,0 +1,454 @@
+
+body {
+    font-family: 'Bungee Inline', sans-serif;
+    margin: 0;
+  
+  }
+  
+  
+  
+  
+  h1 {
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0;
+    font-size: 100px;
+    font-family: "Josefin Slab", serif;
+   
+  }
+  h3 {
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0;
+    font-size: 20px;
+  
+  }
+  
+  
+  
+  
+  
+  p {
+    
+    line-height: 1.9;
+  }
+  
+  .text-box{
+   
+    line-height: 1.9;
+    height:25vw;
+    width:37vw;
+    border: 1px solid rgb(213, 212, 212);
+    font:16px/26px Georgia, Garamond, Serif;
+    overflow:auto;
+  
+  }
+  
+  main {
+    margin: 0 auto;
+  }
+  
+  a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Banner */
+  
+  #banner {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+    
+  }
+  
+  
+  
+  /* Navigation */
+  
+  nav {
+    margin: auto;
+    height: 90px;
+    background: #4c5269;
+    font-family: 'Bungee Inline', sans-serif;
+    font-size: 18px;
+    display: flex;
+    
+  }
+  
+  nav a {
+    padding: 0 1.1vw;
+    color: #eee;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    text-decoration: none;
+    color: rgb(253, 0, 0);
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 3% 1.1vw;
+    
+  }
+  
+  .active {
+    color:rgb(255, 251, 0);
+    
+  }
+  
+  
+  
+  /* Sections */
+  section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .me{
+    padding: 8px;
+    text-align: center;
+    
+  
+  }
+  
+  .section-heading {
+    font-size: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+    transition: all 0.4s;
+    display: inline-block;
+    padding: 4px 32px;
+  
+    
+  
+  }
+  
+  .section-heading:hover {
+    
+      padding:4px 48px;
+      background:rgb(165, 165, 245);
+    text-decoration: underline;
+  
+  }
+  
+  /* Section source  REMOVE*/
+  
+  #section-soruce p {
+  padding: 8px;
+  text-align: center;
+  
+  }
+  
+  #section-source a{
+    text-align: center;
+    margin: 8px;
+  }
+  
+  
+  
+  
+  
+  /* Card */
+  
+  
+  .card .card-description {
+    padding: 4px 8px;
+  }
+  
+  .card-meta-blogpost{
+    color:#333;
+    font-size:14px;
+    padding: 16px;
+    font-family:'Roboto Slab', serif;
+  }
+  
+  .card-meta-blogpost a{
+    color:#333;
+  }
+  
+  /* Button Read more */
+  
+  .btn-readmore {
+    padding: 6px 8px;
+    border: 3px solid black;
+    transition: 0.6s;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    background: white;
+  }
+  
+  .btn-readmore:hover {
+    background: rgb(155, 154, 154);
+    text-decoration: none;
+    padding: 8px 24px 8px 24px;
+    color: white;
+    display: flex;
+  }
+  
+  /* Footer */
+  
+  footer {
+    background: rgb(146, 110, 110);
+    padding: 8px;
+    color: #eee;
+    display: flex;
+    margin-top: 73px;
+    margin-bottom: 30px;
+  }
+  
+  footer a {
+    color: white;
+  
+  }
+  
+  
+  
+  
+  
+  
+  footer #footer {
+  
+    flex: 2;
+    padding: 8px;
+    text-align: center;
+  
+  }
+  footer #ord
+  {
+      font-family: 'kristi', sans-serif;
+      
+      font-size: 40px;
+      
+  }
+  
+  footer #social-media-footer a .fa-facebook,
+  footer #social-media-footer a .fa-youtube
+  footer #social-media-footer a .fa-github,
+  footer #social-media-footer a .fa-linkedin
+   {
+    color: white;
+    transition: 0.4s;
+  }
+  
+  footer #social-media-footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0;
+  }
+  
+  footer #social-media-footer ul li {
+    font-size: 50px;
+    padding: 12px;
+    transition: 0.4s;
+  }
+  
+  
+  footer #social-media-footer ul li:hover a .fa-youtube {
+    color: red;
+  }
+    footer #social-media-footer ul li:hover a .fa-github {
+      color: rgb(227, 240, 48);
+    }
+    footer #social-media-footer ul li:hover a .fa-linkedin {
+      color: rgb(75, 200, 238);
+    }
+  
+    footer #social-media-footer ul li:hover a .fa-facebook {
+    color: #3b5998;
+    }
+  
+  
+  
+  /* Blog List page */
+  
+  .page-heading{
+    font-size:30px;
+    font-family:'Roboto Condensed', sans-serif;
+    transition: all 0.4s;
+    display:inline-block;
+    padding:4px 32px;
+    margin-top: 120px;
+    
+  }
+  
+  
+  
+  
+  /* Pagination */
+  
+  .pagination{
+   
+    padding:6px;
+    text-align:center;
+    font-weight:bold;
+  }
+  
+  .pagination a{
+    border-top: none  white;
+    display: inline-block;
+    padding:8px 16px;
+    transition:0.2s;
+  }
+  
+  .pagination a:hover{
+    text-decoration: none;
+    border-bottom:2px dotted black;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /***************** Media Queries **************************************************************************************************************/
+  
+  @media (max-width: 900px) {
+    nav {
+      margin: auto;
+      height: 90px;
+      background: #4c5269;
+      font-family: 'Bungee Inline', sans-serif;
+      font-size: 21px;
+      display: flex;
+      
+    }
+    .text-box{
+      max-width: 100%;
+      height: auto;
+      width: auto; 
+    
+    }
+  
+    nav ul {
+      padding: 0 1.1vw;
+      display:flex;
+      list-style: none;
+      
+    }
+  
+    .card,
+    .card .card-image img {
+      max-width: 100%;
+      height: auto;
+      width: auto\9; 
+    }
+  
+    }
+  
+  
+  @media (max-width: 719px) {
+    main {
+  
+      width: 95%;
+    }
+  
+    section {
+      flex-direction: column;
+    }
+    
+  
+    .card,
+    .card .card-image img {
+      max-width: 100%;
+      height: auto;
+      width: auto\9; 
+    }
+  
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+   
+  }
+  @media (max-width: 500px) {
+    main {
+      width: 100%;
+    }
+  
+    .card,
+    .card .card-image img {
+      max-width: 100%;
+      height: auto;
+      width: auto\9; 
+    }
+  
+    
+    
+  
+    h1 {
+      font-size: 48px;
+    }
+  
+    #banner h3 {
+      font-size: 40px;
+    }
+  
+    .card {
+      text-align: center;
+    }
+  
+   
+  }
+  @media (max-width: 550px) {
+    main {
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 40px;
+    }
+  
+    #banner h3 {
+      font-size: 0px;
+    }
+  
+    .card {
+      text-align: center;
+    }
+  
+    
+  }
+  
+  @media (min-width: 720px) {
+    main {
+      width: 95%;
+    }
+    .card {
+      width: 45%;
+    }
+    .card .card-image img {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    main {
+      width: 85%;
+    }
+  }
+  
