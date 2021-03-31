@@ -12,15 +12,13 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/addons/p5.sound.min.js"></script>
+
 
   
   <link rel="stylesheet" type="text/css" media="All" href="style.css" />
 
   <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Open+Sans" rel="stylesheet">
 
-  <script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
-<script src="src/theme-twilight.js" type="text/javascript" charset="utf-8"></script>
  
   <title>Daniel Jari</title> 
 
@@ -39,14 +37,14 @@
     </li>
     
     <li>
-        <a class="active" href="https://danieljari.github.io/hemsida/about.html">About</a>
+        <a  href="https://danieljari.github.io/hemsida/about.html">About</a>
     <li>
     </li>
   </ul>
 </nav>
  
 <main>
-  <h2 class="me">Smoke in P5.js</h2>
+  <h3 >Smoke in P5.js</h2>
 
 
 
@@ -56,6 +54,7 @@
         
               <div id = "first">
                 <script src="sketch.js"></script>
+               
             
       </div>
 
@@ -63,105 +62,23 @@
           <a href="#">
              
           </a>
+          <p>
+            date: 2021-03-31
+          </p>
             <div class="text-box">
             
-              let particles = [];
-<br>
-              function setup() {
-                createCanvas(600, 400);
-               
-               <br>
-              }
-              <br>
-              function draw() {
-                background(0);
-               for (let i = 0; i < 8; i++) {
-                 <br>
-                  let p = new Particle();
-                  particles.push(p);
-                }
-                <br>
-                for (let i = particles.length - 1; i >= 0; i--) {
-                  <br>
-                  particles[i].update();
-                  particles[i].show();
-                  <br>
-                if (particles[i].finished()) {
-                  <br>
-                    // remove this particle
-                    <br>
-                    particles.splice(i, 1);
-                    <br>
-                  }
-                  <br>
-                  
-                  
-                  
-                  
-                  
-                }
-              }
-              
-              
-              
-              
-                
-              <br>
-              class Particle {
-                <br>
-                constructor(){
-                  <br>
-                    this.x = 300;
-                    <br>
-                  this.y = 380;
-                  <br>
-                  this.vx = random(-2, 2);
-                  <br>
-                  this.vy = random(-1, -7);
-                  <br>
-                  this.alpha = 255;
-                 
-                   <br>
-                  
-                }
-                <br>
-              
-                
-               finished() {
-                 <br>
-                if(this.alpha < 0){
-                  
-                  return true;
-                  
-                }
-                 
-                
-              }
-                
-              <br>
-                update(){
-                  this.x += this.vx;
-                  this.y += this.vy;
-                  this.alpha -= 5;
-                }
-                <br>
-                show(){
-                  
-                  <br>
-                  fill(this.alpha);
-                  <br>
-                  ellipse(random(this.x,this.x-1),random(this.y,this.y+9),14);
-                  <br>
-                }
-                
-              }
+        This project was made using basic knowledge in P5 and OOB.
+        I made an array of ellipses, I  gave them a color white and looped the drawing of them. five at a time.
+        by declinig the color of white  by one (255-1) every frame gave them a color of black with time.
+         Lastly I had to remove the ellipses that had turned black and was not visible anymore from the array,
+         to not overload the page. 
           
       </div>
   </div>
 
 </section>
 
-<a href="https://github.com/danieljari/Smoke_project1" class="btn-readmore">you can find the code here! <br> <i class="fab fa-github"></i> </a>
+<a href="https://github.com/danieljari/Smoke_project1" class="btn-readmore">Find the code here! <i class="fab fa-github"></i> </a>
 
 
 <footer>

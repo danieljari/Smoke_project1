@@ -3,7 +3,8 @@ let particles = [];
 function setup() {
  
 
-var canvas =  createCanvas(600, 400);
+var canvas =  createCanvas(340, 300);
+
 canvas.parent('first');
 
 
@@ -72,7 +73,7 @@ class Particle {
     
     
     fill(this.alpha);
-    ellipse(random(this.x,this.x-1),random(this.y,this.y+9),14);
+    ellipse(this.x-140,this.y - 100,14);
     
   }
   

@@ -1,10 +1,13 @@
 
+  
+
 body {
     font-family: 'Bungee Inline', sans-serif;
     margin: 0;
   
   }
   
+
   
   
   
@@ -119,12 +122,7 @@ body {
     flex-wrap: wrap;
   }
   
-  .me{
-    padding: 8px;
-    text-align: center;
-    
   
-  }
   
   .section-heading {
     font-size: 20px;
@@ -183,10 +181,10 @@ body {
   /* Button Read more */
   
   .btn-readmore {
-    padding: 6px 8px;
+    padding: 2px 4px;
     border: 3px solid black;
     transition: 0.6s;
-    display: inline-block;
+    display: flex;
     font-weight: bold;
     cursor: pointer;
     background: white;
@@ -207,8 +205,8 @@ body {
     padding: 8px;
     color: #eee;
     display: flex;
-    margin-top: 73px;
-    margin-bottom: 30px;
+   
+    
   }
   
   footer a {
@@ -292,7 +290,10 @@ body {
   
   
   /* Pagination */
-  
+  .me{
+
+    display: center;
+  }
   .pagination{
    
     padding:6px;
@@ -327,7 +328,11 @@ body {
   /***************** Media Queries **************************************************************************************************************/
   
   @media (max-width: 900px) {
+
+  
     nav {
+
+      
       margin: auto;
       height: 90px;
       background: #4c5269;
@@ -363,8 +368,13 @@ body {
   @media (max-width: 719px) {
     main {
   
-      width: 95%;
+      width: 100%;
     }
+
+
+    
+  
+    
   
     section {
       flex-direction: column;
@@ -451,4 +461,3 @@ body {
       width: 85%;
     }
   }
-  
